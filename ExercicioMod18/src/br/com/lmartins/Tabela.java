@@ -2,7 +2,13 @@ package br.com.lmartins;
 
 import java.lang.annotation.*;
 
-public interface Tabela {
+	@Documented
+	@Retention(RetentionPolicy.RUNTIME)
+	@Target(ElementType.TYPE)
 
+public @interface Tabela {
+
+
+	
 }
 	
